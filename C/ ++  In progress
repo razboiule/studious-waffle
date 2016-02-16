@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <time.h>
+#include <string>
+#include <stdlib.h>
+using namespace std;
+
+int main(int argc, char** argv)
+{
+	const char* yes = "yes";
+	const char*  no = "no";
+    string include;
+	int a, b;
+	
+	a = rand() %10 + 15;
+	
+	printf("Do you want to play a game? write yes or no! " );
+	scanf("%s", &include);
+	
+	if (include == "yes")
+	{
+		printf("Guess the number(10 to 25, I guess...): ");
+		scanf("%d", b);
+		if(a < b) puts ("The number is lower!") ;	
+			else if ( a > b ) puts ("The number is higher! ");
+			
+	}
+	while (a!=b);
+	
+	return 0;
+	
+} 
