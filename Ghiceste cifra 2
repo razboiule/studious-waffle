@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+	int a, b;
+	
+	srand(time(NULL));
+	
+	a = rand() % 10 + 100;
+	
+	do{
+		printf("Ghiceste numarul! ( de la 10 la 110): ");
+		scanf("%i", &b);
+		if (a<b) puts ("Numarul secret este mai mic.");
+		else if(a>b) puts ("Numarul este mai mare.");
+	} while (a != b);
+	printf("Ai descoprit numarul!");
+	
+	return 0;
+}
