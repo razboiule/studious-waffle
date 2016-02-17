@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{	double d = 104.25;
+	int a, b, c;
+	string A = "da";
+	const char* B = "nu";
+	
+	cout << "Introduceti codul cardului: ";
+	cin  >> b;
+	
+	if ( b == 88244)
+	{
+		cout << "Doresti sa realizezi o extragere? scrie da sau nu: ";
+		cin  >>  A;
+		
+		if (A == "da")
+				{
+			cout << "Ce suma doriti sa extrageti?: ";
+			cin  >> c;
+			
+		 	   	if ( c < 0) puts("Suma este prea mica");
+			   	else if ( c > 1000) puts("Suma este prea mare.");	
+		       	}
+			   
+		   		else
+			   
+			   	{
+			   	cout << "Nu ati extras nici o suma.\n";
+			   	cout << "Momentan, in contul dumneavoastra se afla: " << d << " Lei. ";	
+		   	   	}
+			return 0;
+		}
+		
+		else 
+		
+		{
+			cout << "Pinul pe care l-ati introdus este invalid.";
+		}
+	
+	return 0;
+}
