@@ -11,6 +11,8 @@ int main(int argc, char** argv)
     string include;
 	int a, b;
 	
+	srand (time(NULL));
+	
 	a = rand() %10 + 15;
 	
 	printf("Do you want to play a game? write yes or no! " );
